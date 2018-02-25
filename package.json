@@ -1,7 +1,7 @@
 {
   "name": "botbuilder-composer",
-  "version": "0.1.0",
-  "description": "Bot Management System",
+  "version": "0.1.1",
+  "description": "Composer for Botbuilder",
   "main": "botbuilder-composer.js",
   "dependencies": {
     "botbuilder": "^3.8.0"
