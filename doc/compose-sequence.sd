@@ -1,0 +1,28 @@
+app:bot-application "Bot Application"
+composer:botbuilder-composer "Composer Library"
+theme:theme-class "Theme Component"
+plugin:function "Plugin Component"
+
+app:composer.1. call compose({bot|null, theme, plugins|[] })
+composer:composer.2. validate arguments
+composer:composer.3. Produces $bot:UniversalBot instance if needed
+composer:composer.4. Produces $buildEventManager:EventEmitter
+composer:theme.5. call init($bot, $buildEventManager)
+[c Iterate over plugins]
+composer:plugin.6. call ($bot, $buildEventManager)
+composer:7\.return Promise
+[/c]
+composer:composer.8. Promise.all(plugin promises)
+app:9\. Promise
+[c Once Promise resolved successfully]
+app:composer.
+composer:composer.10. Call $buildEventManager.emit('init', $bot)
+composer:theme.11. call theme.build($bot, $buildEventManager)
+composer:12\. return Promise
+[c Promise resolved successfully]
+app:12\. Resolve with bot instance
+[/c]
+[/c]
+
+
+

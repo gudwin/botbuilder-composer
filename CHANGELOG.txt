@@ -1,0 +1,2 @@
+- [NO] Support for an intents based dialog
+- [NO] welcome dialog
