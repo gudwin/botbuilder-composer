@@ -29,6 +29,7 @@ Returns a Universal bot instance. Config fields:
  - **plugins** function[], array of callback. Every plugin should return a Promise, once all plugin resolved event __init__ will be executed 
  - (optional) **bot** UniversalBot - if empty, compose will create instance of UniversalBot and will pass it to theme and callbacks. 
  
+ 
 ## ThemeObject 
  - **beforeInit**: function(<Universalbot> bot, <EventEmitter> buildEventManager) 
  - **build**: function(<Universalbot> bot, <EventEmitter> buildEventManager). Value returned by function will be resolved as a promise. 
@@ -37,6 +38,28 @@ Returns a Universal bot instance. Config fields:
  - **init** - called when theme and all plugin callbacks executed
  - **complete** -  called after 
   
+# Library Templates
+
+## Intent With Menu
+
+This template provide a basic template for a bot. Template features:
+
+- first run dialog support
+- greeting dialog support 
+- extendable intents dialog  
+
+### API 
+
+* **constructor** -   
+* **addMenuItem(Object config)** -
+* **getMenu()** -
+* **sendMessageWithMenuActions** -
+* **addIntent(intentName, dialogName)** - 
+* **addRecognizer(recognizer)** - 
+* **setFirstRunDialogId(string dialogId)** - 
+* **setDefaultDialogId(string dialogId)** -
+* **setGreetingDialogId(string dialogId)** -
+
 # Example
   
 # Changelog 

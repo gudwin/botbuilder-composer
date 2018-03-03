@@ -23,7 +23,7 @@ gulp.task('tests', function () {
   }
   runTests();
   //Callback mode, useful if any plugin in the pipeline depends on the `end`/`flush` event
-  return watch(['src/**/*.js', 'spec/**/*.js', 'botbuilder-composer.js', 'config/**/*.json'], function () {
+  return watch(['src/**/*.js', 'spec/**/*.js', 'botbuilder-composer.js', 'config/**/*.json','node_modules/**/*.js'], function () {
     runTests();
   });
 });

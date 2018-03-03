@@ -1,25 +1,31 @@
 {
   "name": "botbuilder-composer",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Composer for Botbuilder",
   "main": "botbuilder-composer.js",
   "dependencies": {
     "botbuilder": "^3.8.0"
   },
   "devDependencies": {
-    "botbuilder-unit": "0.*",
+    "botbuilder-unit": "^0.7.1",
     "gulp": "^3.9.1",
     "gulp-babel": "^7.0.0",
     "gulp-coverage": "^0.3.38",
     "gulp-jasmine": "^2.4.2",
-    "gulp-watch": "^4.3.11",
-    "tap": "^11.0.0",
     "gulp-tap": "^1.0.1",
+    "gulp-watch": "^4.3.11",
     "jasmine": "^2.5.3",
     "jasmine-terminal-reporter": "^1.0.3",
-    "nock": "^9.0.2"
+    "nock": "^9.2.3",
+    "tap": "^11.0.0"
   },
-  "keywords": ["botframework","botbuilder","composer", "build", "chatbots"],
+  "keywords": [
+    "botframework",
+    "botbuilder",
+    "composer",
+    "build",
+    "chatbots"
+  ],
   "author": "Dmitry Shevchenko",
   "license": "MIT"
 }
